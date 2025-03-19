@@ -1,0 +1,248 @@
+body {
+    font-family: "Roboto", serif;
+    margin: 0;
+    overflow: hidden;
+    background-color: #F5F5F5;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    background-color: #DFF2EB;
+    width: 100%;
+    height: 3.5rem;
+}
+
+.partA{
+    display: flex;
+}
+
+.logo {
+    height: 3rem;
+    margin-left: 1.25rem;
+    margin-top: 0.2rem;
+}
+
+.head-button {
+    border: 2px solid transparent;
+    border-radius: 0.35rem;
+    margin-top: 0.9rem;
+    margin-left: 1rem;
+    background-color: #DFF2EB;
+    transition: border 0.25s ease;
+}
+
+.button {
+    text-decoration: none;
+    color: #4A628A;
+    font-stretch: 200%;
+    font-weight: 600;
+}
+
+.head-button:hover {
+    border-color: #7AB2D3 ;
+}
+
+.right {
+    margin-left: 0.1rem;
+}
+
+.partB {
+    width: 450px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.search-box {
+    border-radius: 0.5rem;
+    border: none;
+    border: 2px solid #7AB2D3;
+    height: 2rem;
+    width: 17rem;
+    font-size: 0.9rem;
+}
+
+.search-btn {
+    height: 2rem;
+    background-color: #B9E5E8;
+    border: 2px solid #7AB2D3 ;
+    border-radius: 0.5rem;
+    margin-left: 0.2rem;
+}
+
+.partC {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 25rem;
+    flex-grow: 1;
+    padding-right: 1.5rem;
+}
+
+.right-buttons {
+    color: #4A628A;
+    border-radius: 0.5rem;
+    margin-right: 0.1rem;
+    margin-top: 0.65rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.right-icon {
+    font-size: 1.2rem;
+}
+
+.right-items{
+    border: 2px solid transparent;
+    border-radius: 0.35rem;
+    background-color: #DFF2EB;
+    transition: border 0.25s ease;
+    color: #4A628A;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.right-items:hover{
+    border-color: #7AB2D3 ;
+}
+
+.navigation {
+    width: 250px;
+    height: 100vh;
+    background-color: #B9E5E8;
+    color: #4A628A;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 3.5rem;
+    padding: 20px;
+}
+
+.nav-name {
+    text-decoration: none;
+    color: #4A628A;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+}
+
+.list-items {
+    text-decoration: none;
+    color: #4A628A;
+}
+
+.navigation .menu {
+    position: absolute;
+    width: 90%;
+    top:80px;
+}
+
+.navigation .menu li {
+    margin-top:6px ;
+    padding: 10px 5px;
+}
+
+.navigation .menu li, a{
+    text-decoration: none;
+    font: size 19px;
+}
+
+.navigation .menu i {
+    padding-right: 8px;
+}
+
+ul {
+    list-style: none;
+}
+
+.navigation .menu li:hover {
+    box-shadow: 0 0 6px rgba(74, 98, 138, 0.5);
+}
+
+.navigation .socialz {
+    position: absolute;
+    left: 20px;
+    margin-bottom: 1rem;
+    bottom: 50px;
+}
+
+.navigation .socialz i {
+    color: #4A628A;
+    opacity: 0.5;
+    padding: 3px 3px;
+    margin-left: 0.5rem;
+}
+
+.navigation .socialz i:hover{
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+.content {
+    margin-left: 230px;
+    margin-top: -3.65rem;
+    height: 100%;
+    width: 70rem;
+}
+
+.cards {
+    margin-left: 3rem;
+    margin-top: 3.5rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(74, 98, 138, 0.5);
+}
+
+.cards:hover{
+    box-shadow: 0 0 10px rgba(74, 98, 138, 0.5);
+    transform: scale(1.01);
+}
+
+.offer-container {
+    width: 69rem;
+    height: 5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.3rem;
+    overflow: hidden;
+    background-color: #d0eaff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    border: 1px solid #79b2d2;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.offers {
+    display: flex;
+    animation: swipe 10s linear infinite;
+}
+
+.offer {
+    margin-top: 1rem;
+    padding: 0 30px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4A628A;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgba(74, 98, 138, 0.3);
+}
+
+@keyframes swipe {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
