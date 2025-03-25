@@ -1,12 +1,15 @@
 body {
     font-family: "Roboto", serif;
     margin: 0;
-    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
     background-color: #F5F5F5;
 }
 
 .main {
     display: flex;
+    flex-direction: column;
     height: 100vh;
 }
 
@@ -15,6 +18,8 @@ body {
     background-color: #DFF2EB;
     width: 100%;
     height: 3.5rem;
+    position: fixed;
+    z-index: 2;
 }
 
 .partA{
@@ -121,6 +126,7 @@ body {
     justify-content: center;
     top: 3.5rem;
     padding: 20px;
+    z-index: 2;
 }
 
 .nav-name {
@@ -149,6 +155,7 @@ body {
 
 .navigation .menu li, a{
     text-decoration: none;
+    color: inherit;
     font: size 19px;
 }
 
@@ -184,37 +191,68 @@ ul {
 }
 
 .content {
-    margin-left: 230px;
-    margin-top: -3.65rem;
     height: 100%;
-    width: 70rem;
+    width: 83.5%;
+    margin-left: 250px;
+    margin-top: 3.5rem;
+    padding: 0.5rem;
+    color: #4A628A;
 }
 
 .cards {
-    margin-left: 3rem;
-    margin-top: 3.5rem;
-    border-radius: 0.5rem;
-    width: 10rem;
-    cursor: pointer;
-    box-shadow: 0 0 5px rgba(74, 98, 138, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    height: 18rem;
 }
 
-.cards:hover{
-    box-shadow: 0 0 10px rgba(74, 98, 138, 0.5);
-    transform: scale(1.01);
+.common {
+    height: 200px;
+    width: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background-color: #d0eaff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.common:hover {
+    transform: scale(1.02);
+  }
+
+.pen1 {
+    position: absolute;
+    height: 4.5rem;
+    margin-top: -8.4rem;
+    margin-right: -5rem;
+}
+
+.pen2 {
+    position: absolute;
+    height: 4.5rem;
+    margin-top: 8rem;
+    margin-right: 4.85rem;
+}
+
+.line {
+    font-size: 13.5px;
+}
+
+.sk1 {
+    height: 3.8rem;
 }
 
 .offer-container {
-    width: 69rem;
     height: 5rem;
-    margin-top: 0.5rem;
-    margin-left: 0.3rem;
     overflow: hidden;
     background-color: #d0eaff;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
     color: white;
     border: 1px solid #79b2d2;
-    border-radius: 5px;
     font-size: 18px;
     padding: 10px 0;
     align-items: center;
@@ -245,4 +283,18 @@ ul {
     100% {
         transform: translateX(-100%);
     }
+}
+
+.more{
+    height: 15rem;
+    margin-left: 0.1rem;
+    margin-top: 1rem;
+    background-color: #d0eaff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.heading{
+    padding: 1rem;
+    margin-left: 5px;
 }
