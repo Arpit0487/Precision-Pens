@@ -210,8 +210,8 @@ ul {
     height: 200px;
     width: 150px;
     position: relative;
-    display: flex;
     flex-direction: column;
+    display: flex;
     justify-content:center;
     align-items: center;
     background-color: #d0eaff;
@@ -289,12 +289,73 @@ ul {
     height: 15rem;
     margin-left: 0.1rem;
     margin-top: 1rem;
-    background-color: #d0eaff;
+    background-color: #E6F2FF ;
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.outerDivMoreCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .heading{
     padding: 1rem;
     margin-left: 5px;
+}
+
+.commonInMoreCard {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    position: relative;
+    flex-direction: column;
+    height: 10rem;
+    width: 10rem;
+    margin-top: -5px;
+    background-color: #d0eaff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.commonInMoreCard:hover {
+    transform: scale(1.02);
+}
+
+.lineInMoreCard {
+    margin-top: 8.2rem;
+    font-size: 18px;
+}
+
+.imgInMoreCard {
+    position: absolute;
+    width: 80%;
+    height: 75%;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    border-radius: 0.5rem;
+    height: 20rem;
+    margin-top: 1rem;
+    background-color: #B9E5E8;
+}
+
+
+.above {
+    display: flex;
+    justify-content: space-around;
+}
+
+.knowUs {
+    margin-top: 1.5rem;
+}
+
+.below {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
 }
